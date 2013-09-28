@@ -18,7 +18,7 @@
 (defn render-all [old-dom]
   [:div
    [:h1
-    [:img {:src "/plthulk.jpg"}] "PLT Checklist"]
+    [:img {:src "/plthulk.jpg"}] "Checklist"]
    [:ul (map concept-item @state)]
    [:form
     [:input {:type "text"}]]])

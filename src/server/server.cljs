@@ -58,7 +58,7 @@
            (.on socket "check" (partial on-check-doc socket))
            (send-docs socket)))
     (.listen server 1337))
-  (log "u so listening on http://localhost:1337/"))
+  (log "Listening on port 1337"))
 
 (defn main [& args]
   (mongo/connect "plt" (fn [err db] (server db))))
